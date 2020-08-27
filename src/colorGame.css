@@ -7,6 +7,10 @@ body {
     margin: 0 auto;
 }
 
+h1 {
+    color: white;
+}
+
 .square {
     padding-bottom: 30%;
     width: 30%;
