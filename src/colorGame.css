@@ -11,6 +11,9 @@ body {
 button {
     border: none;
     background: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgb(0, 139, 173)
 }
 
 .colorDisplay {
@@ -30,7 +33,8 @@ p {
 }
 
 #message {
-    color: black;
+    display: inline-block;
+    width: 10%;
     font-weight: bold;
 }
 
@@ -49,7 +53,12 @@ p {
 }
 
 .stripe {
-    
+    letter-spacing: 2px;
     background: white;
-    height: 30px;
+    height: 40px;
 }
+
+.reset {
+    letter-spacing: 2px;
+}
+

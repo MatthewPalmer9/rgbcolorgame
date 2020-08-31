@@ -5,7 +5,7 @@ export default class Navbar extends Component {
         return (
             <div className="stripe">
                 <div className="msgContainer">
-                    <button id="reset">New Colors</button>
+                    <button id="reset">NEW COLORS</button>
                     <span id="message"></span>
                 </div>
             </div>

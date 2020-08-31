@@ -39,14 +39,15 @@ export default class RGBGridContainer extends Component {
 
                 // compares the clickedColor to pickedColor
                 if(clickedColor === pickedColor){
-                    messageDisplay.textContent = "Correct!";
+                    messageDisplay.textContent = "CORRECT!";
                     messageDisplay.style.color = "darkgreen";
-                    resetButton.textContent = "Play Again?"
+                    resetButton.textContent = "PLAY AGAIN?"
                     h1.style.background = clickedColor
                     this.changeColorsOnCorrectChoice(clickedColor);
                 } else {
                     squares[i].style.backgroundColor = "#232323";
-                    messageDisplay.textContent = "Try again.";
+                    messageDisplay.textContent = "WRONG...";
+                    messageDisplay.style.color = "darkred";
                 }
             })
         }
