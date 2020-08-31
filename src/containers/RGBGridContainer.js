@@ -2,22 +2,12 @@ import React, { Component } from 'react';
 
 export default class RGBGridContainer extends Component {
 
-    constructor(){
-        super()
-        this.state = {
-            colors: [
-                "rgb(255, 0, 0)",
-                "rgb(255, 255, 0)",
-                "rgb(0, 255, 0)",
-                "rgb(0, 255, 255)",
-                "rgb(0, 0, 255)",
-                "rgb(255, 0, 255)"
-            ]
-        }
-        
+    constructor(props){
+        super(props)
+        this.state = { colors: this.props.state }
     }
 
-    changeColors = (color) => {
+    changeColorsOnCorrectChoice = (color) => {
         let allSquares = document.querySelectorAll(".square");
         for(let i = 0; i < this.state.colors.length; i++){
             allSquares[i].style.backgroundColor = color;
@@ -26,7 +16,7 @@ export default class RGBGridContainer extends Component {
 
     componentDidMount(){
         const squares = document.querySelectorAll(".square");
-        const pickedColor = this.state.colors[3];
+        const pickedColor = this.state.colors[Math.floor(Math.random()*6)]
         const colorDisplay = document.querySelector(".colorDisplay");
         let messageDisplay = document.querySelector("#message");
 
@@ -45,7 +35,7 @@ export default class RGBGridContainer extends Component {
                 if(clickedColor === pickedColor){
                     messageDisplay.textContent = "Correct!";
                     messageDisplay.style.color = "lightgreen";
-                    this.changeColors(clickedColor);
+                    this.changeColorsOnCorrectChoice(clickedColor);
                 } else {
                     squares[i].style.backgroundColor = "#232323";
                     messageDisplay.textContent = "Try again.";
@@ -55,6 +45,7 @@ export default class RGBGridContainer extends Component {
     }
 
     render() {
+        console.log(this.props.state)
         return (
             <div className="container">
                 <div className="square"></div>
