@@ -19,9 +19,14 @@ export default class RGBGridContainer extends Component {
         const squares = document.querySelectorAll(".square");
         const pickedColor = this.state.colors[Math.floor(Math.random()*6)]
         const colorDisplay = document.querySelector(".colorDisplay");
+        const resetButton = document.querySelector("#reset");
         let messageDisplay = document.querySelector("#message");
 
-        colorDisplay.textContent = pickedColor;
+        colorDisplay.textContent = pickedColor.toUpperCase();
+
+        resetButton.addEventListener("click", () => {
+            window.location.reload()
+        })
 
         for(let i = 0; i < this.state.colors.length; i++){
             // Assigns colors to squares
@@ -35,7 +40,8 @@ export default class RGBGridContainer extends Component {
                 // compares the clickedColor to pickedColor
                 if(clickedColor === pickedColor){
                     messageDisplay.textContent = "Correct!";
-                    messageDisplay.style.color = "lightgreen";
+                    messageDisplay.style.color = "darkgreen";
+                    resetButton.textContent = "Play Again?"
                     h1.style.background = clickedColor
                     this.changeColorsOnCorrectChoice(clickedColor);
                 } else {
