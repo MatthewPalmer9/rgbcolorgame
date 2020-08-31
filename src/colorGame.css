@@ -18,6 +18,10 @@ button {
 
 .colorDisplay {
     color: white;
+    background: black;
+    padding: 0 15px;
+    width: 20%;
+    border-radius: 20px;
 }
 
 h1 {
@@ -40,7 +44,7 @@ p {
 
 .msgContainer {
     text-align: center;
-    padding: 0.2%;
+    padding: 1%;
 }
 
 .square {
@@ -55,10 +59,14 @@ p {
 .stripe {
     letter-spacing: 2px;
     background: white;
-    height: 40px;
+    height: 30px;
+    text-align: center;
+
 }
 
-.reset {
+#reset {
     letter-spacing: 2px;
+    height: 100%;
+    text-align: center;
 }
 

@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-        <h1>The Great <p></p><span className="colorDisplay"></span><p></p>Color Game</h1>
+        <h1>THE GREAT <p></p><span className="colorDisplay"></span><p></p>GUESSING GAME</h1>
         <Navbar />
         <RGBGridContainer state={generateStateColors()} />
     </div>
