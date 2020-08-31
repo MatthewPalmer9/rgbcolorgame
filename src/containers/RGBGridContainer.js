@@ -14,12 +14,21 @@ export default class RGBGridContainer extends Component {
                 "rgb(255, 0, 255)"
             ]
         }
+        
+    }
+
+    changeColors = (color) => {
+        let allSquares = document.querySelectorAll(".square");
+        for(let i = 0; i < this.state.colors.length; i++){
+            allSquares[i].style.backgroundColor = color;
+        }
     }
 
     componentDidMount(){
         const squares = document.querySelectorAll(".square");
         const pickedColor = this.state.colors[3];
         const colorDisplay = document.querySelector(".colorDisplay");
+        let messageDisplay = document.querySelector("#message");
 
         colorDisplay.textContent = pickedColor;
 
@@ -34,10 +43,12 @@ export default class RGBGridContainer extends Component {
 
                 // compares the clickedColor to pickedColor
                 if(clickedColor === pickedColor){
-                    alert("Correct!");
+                    messageDisplay.textContent = "Correct!";
+                    messageDisplay.style.color = "lightgreen";
+                    this.changeColors(clickedColor);
                 } else {
                     squares[i].style.backgroundColor = "#232323";
-                    alert("Incorrect");
+                    messageDisplay.textContent = "Try again.";
                 }
             })
         }

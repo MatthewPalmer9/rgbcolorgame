@@ -12,6 +12,14 @@ h1 {
     text-align: center;
 }
 
+#message {
+    color: red;
+}
+
+.msgContainer {
+    text-align: center;
+}
+
 .square {
     padding-bottom: 30%;
     width: 30%;
