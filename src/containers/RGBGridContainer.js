@@ -15,6 +15,7 @@ export default class RGBGridContainer extends Component {
     }
 
     componentDidMount(){
+        const h1 = document.querySelector("h1");
         const squares = document.querySelectorAll(".square");
         const pickedColor = this.state.colors[Math.floor(Math.random()*6)]
         const colorDisplay = document.querySelector(".colorDisplay");
@@ -35,6 +36,7 @@ export default class RGBGridContainer extends Component {
                 if(clickedColor === pickedColor){
                     messageDisplay.textContent = "Correct!";
                     messageDisplay.style.color = "lightgreen";
+                    h1.style.background = clickedColor
                     this.changeColorsOnCorrectChoice(clickedColor);
                 } else {
                     squares[i].style.backgroundColor = "#232323";

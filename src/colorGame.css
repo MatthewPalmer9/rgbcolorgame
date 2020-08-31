@@ -1,5 +1,6 @@
 body {
     background: #232323;
+    margin: 0;
 }
 
 .container {
@@ -9,6 +10,8 @@ body {
 
 h1 {
     color: white;
+    margin-top: 0;
+    padding: 5%;
     text-align: center;
 }
 
@@ -22,6 +25,7 @@ h1 {
 
 .square {
     padding-bottom: 30%;
+    border-radius: 20%;
     width: 30%;
     float: left;
     background: purple;
