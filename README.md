@@ -1,68 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Welcome to The Great RGB Color Game (revised in React.js)
 
-## Available Scripts
+Hi! My name is Matthew Palmer. This repo serves as the revised vanilla javascript application "The Great RGB Color Game" originated from Udemy's "The Web Developer Bootcamp" by instructor Colt Steele. A passion project of mine where I aim to convert it into a React application.
 
-In the project directory, you can run:
+## How to Use & Run
 
-### `yarn start`
+Assuming you have `Node.js` and can run node packages in your IDE of choice (I recommend VsCode), please clone this repo by typing `git clone https://www.github.com/matthewpalmer9/rgbcolorgame` into your terminal.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Once cloned, type `npm install` to ensure you have the necessary dependecies installed for this application. To start the application, type `npm start` into your terminal and the application will start the server which can be viewed in the browser under LocalHost. 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Typically, you can expect the application to open itself in your default browser. There have been issues with `Firefox` in the past, but I have corrected the necessary syntax to function across all browsers.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+If you have any questions or issues, please contact me at `matthewpalmer9@outlook.com`.
